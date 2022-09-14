@@ -16,6 +16,9 @@
   },
   "private": "false",
   "bls": {
-    "functionId": "blockless-function_hello-world-1.0.0"
+    "functionId": "blockless-function_hello-world-template-1.0.0",
+    "manifest": {
+      "contentType": "json"
+    }
   }
 }
