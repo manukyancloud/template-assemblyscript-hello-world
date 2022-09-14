@@ -1,7 +1,6 @@
 name: Publish to Blockless
 on:
   workflow_dispatch:
-  repository_dispatch:
 
 jobs:
   publish-on-blockless:
