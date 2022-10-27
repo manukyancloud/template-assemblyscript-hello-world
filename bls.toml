@@ -1,0 +1,16 @@
+name = "blockless_hello_world"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "blockless_hello_world-debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "blockless_hello_world-release.wasm"
+command = "npm run build:release"
