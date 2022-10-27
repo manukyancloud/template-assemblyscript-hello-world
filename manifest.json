@@ -1,8 +1,0 @@
-{
-  "id": "",
-  "name": "${name}",
-  "description": "",
-  "fs_root_path": "./",
-  "entry": "${name}.wasm",
-  "runtime": { "checksum": "", "url": "${name}.tar.gz" }
-}
