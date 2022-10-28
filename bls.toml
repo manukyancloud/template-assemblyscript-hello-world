@@ -1,4 +1,4 @@
-name = "blockless_hello_world"
+name = "template_name"
 version = "1.0.0"
 
 [deployment]
@@ -7,10 +7,10 @@ nodes = 1
 
 [build]
 dir = "build"
-entry = "blockless_hello_world-debug.wasm"
+entry = "template_name-debug.wasm"
 command = "npm run build:debug"
 
 [build_release]
 dir = "build"
-entry = "blockless_hello_world-release.wasm"
+entry = "template_name-release.wasm"
 command = "npm run build:release"
