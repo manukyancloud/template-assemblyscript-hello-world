@@ -6,6 +6,11 @@ on:
 jobs:
   publish-on-blockless:
     runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write # This is required for requesting the JWT
+      contents: write  # This is required for actions/checkout
+
     steps:
       - uses: actions/checkout@v2
       - name: get epository name
@@ -16,7 +21,5 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
       - name: Blockless Action Setup
         uses: txlabs/github-action-blockless-setup@v0.0.4
-        with:
-          BLOCKLESS_ACCESS_TOKEN: ${{ secrets.BLOCKLESS_ACCESS_TOKEN }}
       - name: Blockless Function Publish
         uses: txlabs/github-action-blockless-deploy@v0.0.3
