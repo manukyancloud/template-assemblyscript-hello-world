@@ -1,16 +1,21 @@
-name = "template_name"
+name = "Test"
+type = "function"
 version = "1.0.0"
 
 [deployment]
 permission = "public"
-nodes = 1
+nodes = 3
+permissions = [
+  "<https://bsc-dataseed.binance.org>",
+  "<https://api.coingecko.com>"
+]
 
 [build]
 dir = "build"
-entry = "template_name_debug.wasm"
+entry = "Test_debug.wasm"
 command = "npm run build:debug"
 
 [build_release]
 dir = "build"
-entry = "template_name.wasm"
+entry = "Test.wasm"
 command = "npm run build:release"
